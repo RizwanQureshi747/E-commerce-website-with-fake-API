@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+/* NAVBAR */
+
+nav{
+    width: 100%;
+    padding: 5px 30px;
+    background-color: cyan;
+    border-bottom: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .logo h1{
+    color: white;
+    padding: 5px 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.navSearch{
+    width: 50%;
+    display: flex;
+}
+
+.navSearch:hover{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    box-shadow: 2px 2px 5px black;
+}
+
+.navSearch input{
+    width:100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid green;
+    border-top-left-radius: 20px;
+}
+
+.navSearch button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    /* text-shadow: 1px 1px 2px black; */
+    background-color: blue;
+    border: 1px solid blue;
+    border-bottom-right-radius:20px ;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.navSearch button:hover{
+    color: blue;
+    background-color: #fff;
+}
+
+.navlinks{
+    width: 30%;
+    padding: 1% 1%;
+}
+
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 10%;
+}
+
+.navlinks ul li{
+    position: relative;
+    padding: 1% 1%;
+}
+
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px black;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.navlinks ul li a::before,
+.navlinks ul li a::after{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 1px;
+    transition: 0.3s all ease-in-out;
+}
+
+.navlinks ul li a::before{
+    top: 0px;
+    left: 0px;
+}
+
+.navlinks ul li a::after{
+    bottom: 0px;
+    right: 0px;
+}
+
+.navlinks ul li a:hover::before{
+    right: 0px;
+    left: auto;
+    width: 100%;
+    background-color: blue;
+}
+
+.navlinks ul li a:hover::after{
+    right: auto;
+    left: 0px;
+    width: 100%;
+    background-color: blue;
+}
+
+.navlinks ul li a:hover{
+    color: blue;
+    text-shadow: 1px 2px 0px white;
+}
+
+
+
+/* MAIN */
+
+.main{
+    width: 100%;
+    height: auto;
+    padding: 40px 100px;
+}
+
+#parentCrad{
+    display: flex;
+    flex-wrap:wrap ;
+    gap:  40px;
+}
+
+.parent-container{
+    width: 250px;
+    height: 400px;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parent-container:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
+.parent img{
+    width: 100%;
+}
+
+.discraptions{
+    width: 100%;
+    height: 140px;
+}
+
+.discraptions h6{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.discraptions p{
+    font-size: 12px;
+}
+
+.card-btn{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: blue;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.card-btn:hover{
+    color: blue;
+    background-color: #fff;
+}
